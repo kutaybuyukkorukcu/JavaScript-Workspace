@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
-var uri = "mongodb+srv://dbUser:dbUser4416@messageapi-n5zfp.mongodb.net/test?retryWrites=true&w=majority"
+var uri = "mongodb://heroku_g7g5z3bs:td2u37uj06ngd7p96go8vn80av@ds117316.mlab.com:17316/heroku_g7g5z3bs"
 // Connect to Mongoose and set connection variable
 mongoose.connect(uri, {useNewUrlParser:true});
 var db = mongoose.connection;
