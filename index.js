@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://infinite-retreat-38718.herokuapp.com/projectx');
+mongoose.connect('mongodb+srv://dbUser:4416dbUser@messageapi-n5zfp.mongodb.net/test?retryWrites=true&w=majority');
 
 var db = mongoose.connection;
 // Setup server port
