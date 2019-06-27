@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb+srv://dbUser:4416dbUser@messageapi-n5zfp.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://dbUser:4416dbUser@messageapi-n5zfp.mongodb.net:27017/');
 
 var db = mongoose.connection;
 // Setup server port
