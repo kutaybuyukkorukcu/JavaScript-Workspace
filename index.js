@@ -14,11 +14,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://infinite-retreat-38718.herokuapp.com:27017/projectx');
+mongoose.connect('mongodb://infinite-retreat-38718.herokuapp.com/projectx');
 
 var db = mongoose.connection;
 // Setup server port
-var port = process.env.PORT || 8082;
+var port = process.env.PORT || 8080;
 // Send message for default URL
 app.get('/', (req, res) => res.send('/ calisti'));
 // Use Api routes in the App
