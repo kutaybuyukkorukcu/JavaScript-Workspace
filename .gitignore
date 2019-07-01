@@ -1,0 +1,25 @@
+/MessageAPI/node_modules
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/crapp/node_modules
+/crapp/.pnp
+/crapp/.pnp.js
+
+# testing
+/crapp/coverage
+
+# production
+/crapp/build
+
+# misc
+/crapp/.DS_Store
+/crapp/.env.local
+/crapp/.env.development.local
+/crapp/.env.test.local
+/crapp/.env.production.local
+
+/crapp/npm-debug.log*
+/crapp/yarn-debug.log*
+/crapp/yarn-error.log*
