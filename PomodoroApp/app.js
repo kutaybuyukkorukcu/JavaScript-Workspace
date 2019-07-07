@@ -187,11 +187,6 @@ class Timer extends React.Component {
             <i className="fa fa-refresh fa-2x"/>
           </button>
         </div>
-        <div className="author"> Designed and Coded by <br />
-          <a target="_blank" href="https://goo.gl/6NNLMG"> 
-            Peter Weinberg
-          </a>
-        </div>
         <audio id="beep" preload="auto" 
           src="https://goo.gl/65cBl1"
           ref={(audio) => { this.audioBeep = audio; }} />
