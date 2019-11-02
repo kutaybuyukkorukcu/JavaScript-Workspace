@@ -46,7 +46,7 @@ class Calculator extends React.Component {
       let answer = Math.round(1000000000000 * eval(expression)) / 1000000000000;
       this.setState({
         currentVal: answer.toString(),
-        formula: expression.replace(/\*/g, '·').replace(/-/g, '-') + '=' + answer,
+        formula: expression.replace(/\*/g, 'ï¿½').replace(/-/g, '-') + '=' + answer,
         prevVal: answer,
         evaluated: true
       });
@@ -138,7 +138,7 @@ class Calculator extends React.Component {
     return (
       <div>
         <div className='calculator'>
-          <Formula formula={this.state.formula.replace(/x/g, '·')} />
+          <Formula formula={this.state.formula.replace(/x/g, 'ï¿½')} />
           <Output currentValue={this.state.currentVal} />
           <Buttons evaluate={this.handleEvaluate}
                    operators={this.handleOperators}
@@ -190,4 +190,3 @@ class Formula extends React.Component {
 }; 
 
 ReactDOM.render(<Calculator />, document.getElementById('app'));
-
