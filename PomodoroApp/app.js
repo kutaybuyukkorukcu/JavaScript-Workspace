@@ -39,28 +39,19 @@ class Timer extends React.Component {
       intervalID: '',
       alarmColor: {color: 'white'}
     }
-    this.setBrkLength = this.setBrkLength.bind(this);
-    this.setSeshLength = this.setSeshLength.bind(this);
-    this.lengthControl = this.lengthControl.bind(this);
-    this.timerControl = this.timerControl.bind(this);
-    this.beginCountDown = this.beginCountDown.bind(this);
-    this.decrementTimer = this.decrementTimer.bind(this);
-    this.phaseControl = this.phaseControl.bind(this);
-    this.warning = this.warning.bind(this);
-    this.buzzer = this.buzzer.bind(this);
-    this.switchTimer = this.switchTimer.bind(this);
-    this.clockify = this.clockify.bind(this);
-    this.reset = this.reset.bind(this);
   }
-  setBrkLength(e) {
+
+  setBrkLength = (e) => {
     this.lengthControl('brkLength', e.currentTarget.value, 
     this.state.brkLength, 'Session');
   }
-  setSeshLength(e) {
+
+  setSeshLength = (e) => {
     this.lengthControl('seshLength', e.currentTarget.value, 
     this.state.seshLength, 'Break');
   }
-  lengthControl(stateToChange, sign, currentLength, timerType) {
+
+  lengthControl = (stateToChange, sign, currentLength, timerType) => {
     if (this.state.timerState == 'running') return;
     if (this.state.timerType == timerType) {
       if (sign == "-" && currentLength != 1 ) {
@@ -78,7 +69,8 @@ class Timer extends React.Component {
       } 
     }
   }
-  timerControl() {
+
+  timerControl = () => {
     let control = this.state.timerState == 'stopped' ? (
       this.beginCountDown(),
       this.setState({timerState: 'running'})
@@ -87,7 +79,8 @@ class Timer extends React.Component {
       this.state.intervalID && this.state.intervalID.cancel()
     );
   }
-  beginCountDown() {
+
+  beginCountDown = () => {
     this.setState({
       intervalID: accurateInterval(() => {
         this.decrementTimer(); 
@@ -95,10 +88,12 @@ class Timer extends React.Component {
        }, 1000)
     })
   }
-  decrementTimer() {
+
+  decrementTimer = () => {
     this.setState({timer: this.state.timer - 1});
   }
-  phaseControl() {
+
+  phaseControl = () => {
     let timer = this.state.timer;
     this.warning(timer);
     this.buzzer(timer);
@@ -114,31 +109,36 @@ class Timer extends React.Component {
       );
     }  
   }
-  warning(_timer) {
+
+  warning = (_timer) => {
     let warn = _timer < 61 ? 
-    this.setState({alarmColor: {color: '#a50d0d'}}) : 
-    this.setState({alarmColor: {color: 'white'}});
+    this.setState({alarmColor: {color: 'black'}}) : 
+    this.setState({alarmColor: {color: 'black'}});
   }
-  buzzer(_timer) {
+
+  buzzer = (_timer) => {
     if (_timer === 0) {
       this.audioBeep.play();
     }
   }
-  switchTimer(num, str) {
+
+  switchTimer = (num, str) => {
     this.setState({
       timer: num,
       timerType: str,
       alarmColor: {color: 'white'}
     })
   }
-  clockify() {
+
+  clockify = () => {
     let minutes = Math.floor(this.state.timer / 60);
     let seconds = this.state.timer - minutes * 60;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     return minutes + ':' + seconds;
   }
-  reset() {
+
+  reset = () => {
     this.setState({
       brkLength: 5,
       seshLength: 25,
@@ -156,7 +156,7 @@ class Timer extends React.Component {
     return (
       <div>
         <div className="main-title">
-          Pomodoro Clock
+          Pomodoro
         </div>
         <TimerLengthControl 
           titleID="break-label"   minID="break-decrement"
@@ -195,6 +195,6 @@ class Timer extends React.Component {
   }
 };
 
-ReactDOM.render(<Timer />, document.getElementById('app'));
+ReactDOM.render(<Timer />, document.getElementById('root'));
 
 
