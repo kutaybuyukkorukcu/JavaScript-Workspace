@@ -1,6 +1,3 @@
-const projectName = "markdown-previewer";
-localStorage.setItem('example_project', 'Markdown Previewer');
-
 marked.setOptions({
   breaks: true,
 });
@@ -18,25 +15,26 @@ class App extends React.Component{
       editorMaximized: false,
       previewMaximized: false
     }
-    this.handleChange = this.handleChange.bind(this);
-    this.handleEditorMaximize = this.handleEditorMaximize.bind(this);
-    this.handlePreviewMaximize = this.handlePreviewMaximize.bind(this);
   }
-  handleChange(e) {
+
+  handleChange = (e) => {
     this.setState({
       markdown: e.target.value
     });
   }
-  handleEditorMaximize() {
+
+  handleEditorMaximize = () => {
     this.setState({
       editorMaximized: !this.state.editorMaximized
     });
   }
-  handlePreviewMaximize() {
+  
+  handlePreviewMaximize = () => {
     this.setState({
       previewMaximized: !this.state.previewMaximized
     });
   }
+
   render() {
     const classes = this.state.editorMaximized ? 
           ['editorWrap maximized', 
@@ -99,6 +97,6 @@ const Preview = (props) => {
 }
 
 const placeholder = 
-`# Welcome to my React Markdown Previewer!`
+`# Welcome to React Markdown Previewer!`
 
 ReactDOM.render(<App />, document.getElementById('root'));

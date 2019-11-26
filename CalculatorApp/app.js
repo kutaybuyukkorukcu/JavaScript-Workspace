@@ -22,15 +22,9 @@ class Calculator extends React.Component {
       currentSign: 'pos',
       lastClicked: ''
     }
-    this.maxDigitWarning = this.maxDigitWarning.bind(this);
-    this.handleOperators = this.handleOperators.bind(this);
-    this.handleEvaluate = this.handleEvaluate.bind(this);
-    this.initialize = this.initialize.bind(this);
-    this.handleDecimal = this.handleDecimal.bind(this);
-    this.handleNumbers = this.handleNumbers.bind(this);
   }
   
-  maxDigitWarning() {
+  maxDigitWarning = () => {
     this.setState({
       currentVal: 'Digit Limit Met',
       prevVal: this.state.currentVal
@@ -38,7 +32,7 @@ class Calculator extends React.Component {
     setTimeout(() => this.setState({currentVal: this.state.prevVal}), 1000);
   }
   
-  handleEvaluate() {
+  handleEvaluate = () => {
     if (!this.state.currentVal.includes('Limit')) {
       let expression = this.state.formula;
       if (endsWithOperator.test(expression)) expression = expression.slice(0, -1);
@@ -53,7 +47,7 @@ class Calculator extends React.Component {
     }
   }
     
-  handleOperators(e) { 
+  handleOperators = (e) => { 
     if (!this.state.currentVal.includes('Limit')) {
       this.setState({currentVal: e.target.value,evaluated: false});
       if (this.state.formula.includes('=')) {
@@ -71,7 +65,7 @@ class Calculator extends React.Component {
     }
   }
   
-  handleNumbers(e) {
+  handleNumbers = (e) => {
     if (!this.state.currentVal.includes('Limit')) {
       this.setState({evaluated: false})
       if (this.state.currentVal.length > 21) {
@@ -98,7 +92,7 @@ class Calculator extends React.Component {
     }
   }
   
-  handleDecimal() {
+  handleDecimal = () => {
     if (this.state.evaluated === true) {
       this.setState({
         currentVal: '0.',
@@ -124,7 +118,7 @@ class Calculator extends React.Component {
     }
   }
   
-  initialize() {
+  initialize = () => {
     this.setState({
       currentVal: '0',
       prevVal: '0',
