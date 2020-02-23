@@ -1,3 +1,6 @@
+<!-- This app originally developed by Gabriel Nunes 
+I played along with some code for the sake of learning :) -->
+
 const projectName = "random-quote-machine";
 localStorage.setItem('example_project', 'Randowm Quote Machine');
 let quotesData;

@@ -1,3 +1,5 @@
+<!-- This app originally developed by Peter Weinberg I played along with some code for the sake of learning :) -->
+
 marked.setOptions({
   breaks: true,
 });
