@@ -2,3 +2,5 @@
 // Use a closure to call a stored key with stored arguments.
 
 const call = (key, ...args) => context => context[key](...args);
+
+// 🧙‍♂️👍

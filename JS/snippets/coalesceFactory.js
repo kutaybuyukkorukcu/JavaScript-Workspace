@@ -10,3 +10,5 @@ const coalesceFactory = valid => (...args) => args.find(value);
     
     customCoalesce(undefined, null, NaN, '', 'Waldo');
     // "Waldo"
+
+// 🧙‍♂️👍

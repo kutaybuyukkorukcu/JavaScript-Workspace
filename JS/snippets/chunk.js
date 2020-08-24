@@ -10,5 +10,7 @@ const chunk = (arr, size) =>
                   arr.slice(i * size, i * size + size)
           );
           
-Exp.
+// Exp.
   chunk([1, 2, 3, 4, 5], 2); // [[1,2],[3,4],[5]]
+
+// 🧙‍♂️👍

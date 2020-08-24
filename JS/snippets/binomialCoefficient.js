@@ -16,3 +16,5 @@ const binomialCoefficient = (n, k) => {
 // Exp.
   binomialCoefficient(8, 2);
   // 28
+
+// 🧙‍♂️👍

@@ -26,3 +26,5 @@ const chainAsync = fns => {
       console.log('2 sec');
     }
   ]);
+
+// 🧙‍♂️👍
