@@ -23,3 +23,4 @@ const bindAll = (obj, ...fns) =>
     bindAll(view, 'click');
     jQuery(el).on('click', view.click);
     
+// 🧙‍♂️👍

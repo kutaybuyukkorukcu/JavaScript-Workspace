@@ -6,5 +6,8 @@ const arrayToCSV = (arr, delimiter = ',') =>
                           .join(delimiter))
                 .join('\n');
 
-Exp.
-  arrayToCSV([['a', 'b'], ['c', 'd']], ';'); // "a";"b"\n"c";"d"
+// Exp.
+  arrayToCSV([['a', 'b'], ['c', 'd']], ';'); 
+  // "a";"b"\n"c";"d"
+
+// 🧙‍♂️👍

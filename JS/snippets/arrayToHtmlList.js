@@ -7,3 +7,5 @@ const arrayToHtmlList = (arr, listID) =>
     (el = document.querySelector('#' + listID)),
     (el.innerHTML += arr.map(item => `<li>${item}</li>`).join('')))
   )();
+
+// 🧙‍♂️👍
