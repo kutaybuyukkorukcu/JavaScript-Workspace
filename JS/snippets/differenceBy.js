@@ -10,3 +10,5 @@ const differenceBy = (a, b, fn) => {
 // Exp.
   differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], v => v.x); 
   // [2]
+
+// 🧙‍♂️👍

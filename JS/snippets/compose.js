@@ -14,3 +14,5 @@ const compose = (...funcs) => funcs.reduce((f, g) => (...args) => f(g(...args)))
   
   multiplyAndAdd5(5, 2);
   // 15
+
+// 🧙‍♂️👍

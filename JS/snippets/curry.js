@@ -8,3 +8,5 @@ const curry = (fn, arity = fn.length, ...args) =>
 // Exp.
   curry(Math.min, 3)(10)(50)(2);
   // 2
+
+// 🧙‍♂️👍

@@ -12,3 +12,5 @@ const composeRight = (...fns) => fns.reduce((f, g) => (...args) => g(f(...args))
   
   addAndSquare(1, 2); 
   // 9
+
+// 🧙‍♂️👍

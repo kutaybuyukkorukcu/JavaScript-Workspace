@@ -1,6 +1,6 @@
-Escapes a string to use in a regex.
+// Escapes a string to use in a regex.
 
-Using String.prototype.replace() to escape special characters.
+// Using String.prototype.replace() to escape special characters.
 
 const escapeRegExp = string => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -8,3 +8,5 @@ const escapeRegExp = string => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   
   escapeRegExp('(test)');
   // \\(test\\)
+
+// 🧙‍♂️👍 

@@ -2,3 +2,5 @@
 // Given a function, return a closure that collects all inputs into an array-accepting function.
 
 const collectInto = fn => (...args) => fn(args);
+
+// 🧙‍♂️👍

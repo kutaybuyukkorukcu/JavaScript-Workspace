@@ -1,8 +1,8 @@
-Deep freezes an object.
+// Deep freezes an object.
 
-Using Object.keys() to get all the properties of the passed object and forEach() to iterate over them. 
-Object.freeze(obj) recursively on all properties, checking if each one is frozen using Object.isFrozen() and applying deepFreeze() as necessary.
-And finally using Object.freeze() to freeze the given object.
+// Using Object.keys() to get all the properties of the passed object and forEach() to iterate over them. 
+// Object.freeze(obj) recursively on all properties, checking if each one is frozen using Object.isFrozen() and applying deepFreeze() as necessary.
+// And finally using Object.freeze() to freeze the given object.
 
 const deepFreeze = obj => {
   Object.keys(obj).forEach(prop => {
@@ -20,3 +20,6 @@ const deepFreeze = obj => {
     o[1][0] = 4;
     
     // both not allowed
+
+
+// 🧙‍♂️👍

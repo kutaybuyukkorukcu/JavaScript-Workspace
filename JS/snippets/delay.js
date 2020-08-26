@@ -12,3 +12,5 @@ const delay = (fn, wait, ...args) => setTimeout(fn, wait, ...args);
     1000,
     'Delayed text!'
   );
+
+// 🧙‍♂️👍

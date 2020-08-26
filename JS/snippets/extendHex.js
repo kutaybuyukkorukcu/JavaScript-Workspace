@@ -1,7 +1,7 @@
-Extends a 3-digit color code to a 6-digit color code.
+// Extends a 3-digit color code to a 6-digit color code.
 
-Using map(), String.prototype.split() and join() to join the mapped array for converting 3-digit RGB notated hexadecimal color-code to the 6-digit form.
-slice() is used to remove # from string start since it's added once.
+// Using map(), String.prototype.split() and join() to join the mapped array for converting 3-digit RGB notated hexadecimal color-code to the 6-digit form.
+// slice() is used to remove # from string start since it's added once.
 
 const extendHex = shortHex =>
   '#' + 
@@ -15,3 +15,5 @@ const extendHex = shortHex =>
 
   extendHex('#03f');
   // '#0033ff'
+
+// 🧙‍♂️👍 

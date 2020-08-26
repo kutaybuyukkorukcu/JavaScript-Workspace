@@ -3,7 +3,8 @@
 // Loop through the array using slice() to drop the first element of the array until the returned value is true.
 
 const dropWhile = (arr, func) => {
-  while(arr.length > 0 && !func(arr[0])){
+  var i = 0;
+  while(arr.length > 0 && !func(arr[i] && i++)){
     arr = arr.slice(1);
   }
   return arr;
@@ -12,3 +13,5 @@ const dropWhile = (arr, func) => {
 // Exp.
   dropWhile([1, 2, 3, 4], n => n >= 3); 
   // [3,4]
+
+// 🧙‍♂️👍 

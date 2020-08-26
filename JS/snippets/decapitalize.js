@@ -9,3 +9,5 @@ const decapitalize = ([first, ...rest], upperRest = false) =>
 // Exp.
   decapitalize('FooBar');
   // 'fooBar'
+
+// 🧙‍♂️👍

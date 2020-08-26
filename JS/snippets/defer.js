@@ -8,3 +8,5 @@ const defer = (fn, ...args) => setTimeout(fn, 1, ...args);
 // Exp.
   defer(console.log, 'a'), console.log('b');
   // logs 'b' then 'a'
+
+// 🧙‍♂️👍

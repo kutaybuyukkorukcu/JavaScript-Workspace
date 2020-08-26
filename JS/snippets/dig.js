@@ -1,6 +1,6 @@
-Returns the target value in a nested JSON object, based on the given key.
+// Returns the target value in a nested JSON object, based on the given key.
 
-Using the in operator to check if target exists in obj. If found, return the value of obj[target], otherwise use values(obj) and reduce() to recursively call dig on each nested object until the first matching key/value pair is found.
+// Using the in operator to check if target exists in obj. If found, return the value of obj[target], otherwise use values(obj) and reduce() to recursively call dig on each nested object until the first matching key/value pair is found.
 
 const dig = (obj, target) =>
   target in obj
@@ -27,3 +27,5 @@ const dig = (obj, target) =>
   
   console.log(dig(data, 'level3')); 
   // 'mock data'
+
+// 🧙‍♂️👍 

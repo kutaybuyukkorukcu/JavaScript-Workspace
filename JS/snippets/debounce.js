@@ -21,3 +21,5 @@ const debounce = (fn, ms = 0) => {
     }, 250)
   ); 
   // Prints the window dimensions at most every 250ms
+
+// 🧙‍♂️👍

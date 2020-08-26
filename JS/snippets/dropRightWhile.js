@@ -11,3 +11,5 @@ const dropRightWhile = (arr, func) => {
 // Exp.
   dropRightWhile([1, 2, 3, 4], n => n < 3);
   // [1, 2]
+
+// 🧙‍♂️👍 

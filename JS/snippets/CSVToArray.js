@@ -14,3 +14,5 @@ const CSVToArray = (data, delimiter = ',', omitFirstRow = false) =>
 // Exp.
   CSVToArray('a,b\nc,d');
   // [['a','b'],['c','d']];
+
+// 🧙‍♂️👍

@@ -25,3 +25,5 @@ const colorize = (...args) => ({
 // Exp.
   console.log(colorize('foo', 'bar').bgBlue); 
   // 'foo bar' (blue background)
+
+// 🧙‍♂️👍
