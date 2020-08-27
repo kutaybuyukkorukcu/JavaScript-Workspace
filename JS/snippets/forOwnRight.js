@@ -11,3 +11,5 @@ const forOwnRight = (obj, fn) =>
 // Exp.
   forOwnRight({ foo: 'bar', a: 1 }, v => console.log(v)); 
   // 1, 'bar'
+
+// 🧙‍♂️👍 

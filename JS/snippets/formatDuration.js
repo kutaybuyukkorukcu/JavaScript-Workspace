@@ -1,9 +1,9 @@
-Returns the human readable format of the given number of milliseconds.
+// Returns the human readable format of the given number of milliseconds.
 
-Dividing ms with the appropriate values to obtain the appropriate values for day, hour, minute, second and millisecond.
-Using entries() with filter() to keep only non-zero values. 
-Using map() to create the string for each value, pluralizing appropriately.
-Using String.prototype.join(', ') to combine the values into a string.
+// Dividing ms with the appropriate values to obtain the appropriate values for day, hour, minute, second and millisecond.
+// Using entries() with filter() to keep only non-zero values. 
+// Using map() to create the string for each value, pluralizing appropriately.
+// Using String.prototype.join(', ') to combine the values into a string.
 
 const formatDuration = ms => {
   if (ms < 0) {
@@ -24,7 +24,8 @@ const formatDuration = ms => {
       .join(', ');
 };
 
-  // Exp.
-  
+// Exp.
   formatDuration(1001);
   // '1 second, 1 millisecond'
+
+// 🧙‍♂️👍

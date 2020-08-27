@@ -12,5 +12,7 @@ const formToObject = form =>
   );
   
 // Exp.
-formToObject(document.querySelector('#form'));
-// { email: 'test@email.com', name: 'Test Name' }
+  formToObject(document.querySelector('#form'));
+  // { email: 'test@email.com', name: 'Test Name' }
+
+// 🧙‍♂️👍 
