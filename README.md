@@ -1,1 +1,1 @@
-# users-locationandmessage-api
+# JavaScript snippets
